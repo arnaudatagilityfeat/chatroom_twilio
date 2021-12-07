@@ -25,6 +25,10 @@ class ConferenceCubit extends Cubit<ConferenceState> {
   final List<ParticipantWidget> _participants = [];
   var trackId;
 
+  late Room _room;
+  late VideoCapturer _cameraCapturer;
+  late List<StreamSubscription> _streamSubscriptions;
+
   ConferenceCubit({
     required this.name,
     required this.token,
