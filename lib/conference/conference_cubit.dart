@@ -27,7 +27,7 @@ class ConferenceCubit extends Cubit<ConferenceState> {
 
   late Room _room;
   late VideoCapturer _cameraCapturer;
-  late List<StreamSubscription> _streamSubscriptions;
+  late List<StreamSubscription> _streamSubscriptions = [];
 
   ConferenceCubit({
     required this.name,
